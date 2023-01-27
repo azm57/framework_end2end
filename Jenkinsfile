@@ -4,19 +4,23 @@ pipeline {
     stage("build")  {
       steps{
         echo 'building application...'
-        mvn compile
+        script{
+          mvn compile}
       }
     }
     stage("test")  {
       steps{
         echo 'testing application...'
-        mvn test
+        script{
+          mvn test}
       }
      }
      stage("deploy")  {
       steps{
         echo 'deploying application...'
+        script{
         mvn install
+        }
       }
      }
   }
