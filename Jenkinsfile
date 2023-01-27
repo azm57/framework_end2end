@@ -3,14 +3,14 @@ pipleline {
   stages {
     stage("build")  {
       steps{
-        echo "building application"
+        echo 'building application...'
       }
       stage("test")  {
       steps{
-        echo "testing application"
+        echo 'testing application...'
       }
         stage("deploy")  {
       steps{
-        echo "deploying application"
+        echo 'deploying application...'
       }
     }
