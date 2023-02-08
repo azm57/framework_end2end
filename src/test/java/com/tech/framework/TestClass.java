@@ -21,7 +21,7 @@ import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 
-/* Working Framework */
+/* Working Frameworkk */
 public class TestClass {
 	public WebDriver driver;
 	Logger logger;
