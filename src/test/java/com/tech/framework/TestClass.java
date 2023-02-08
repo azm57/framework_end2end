@@ -40,7 +40,8 @@ public class TestClass {
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 
-	@Test(enabled = false)
+	
+	@Test
 	public void LoginAndCheckWatchlist() throws InterruptedException {
 		ExtentTest checklistTest = extent.createTest("Login to Rediff Money and Validate Watchlist");
 		driver.findElement(By.xpath("//*[@for='useremail']/following-sibling::input[@id='useremail']"))
